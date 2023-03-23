@@ -1,13 +1,17 @@
+import { Provider } from "react-redux";
 import "./App.css";
 import Contador from "./components/Contador";
+import store from "./store";
 
 function App() {
   return (
-    <div className="App">
-      <h1>useReducer</h1>
-      <hr/>
-      <Contador/>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <h1>Redux</h1>
+        <hr />
+        <Contador />
+      </div>
+    </Provider>
   );
 }
 
