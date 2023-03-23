@@ -1,8 +1,13 @@
+import {
+  DECREMENT,
+  INCREMENT,
+  INCREMENT_5,
+  DECREMENT_5,
+  RESET,
+} from "../types";
 
-export const TYPES = {
-    INCREMENT : "INCREMENT",
-    INCREMENT_5 : " INCREMENT_5",
-    DECREMENT : "DECREMENT",
-    DECREMENT_5 : " DECREMENT_5",
-    RESET : "RESET"
-  }
+export const sumar = () => ({ type: INCREMENT });
+export const sumar5 = () => ({ type: INCREMENT_5, payload: 5 });
+export const restar = () => ({ type: DECREMENT });
+export const restar5 = () => ({ type: DECREMENT_5, payload: 5 });
+export const reset = () => ({ type: RESET });
