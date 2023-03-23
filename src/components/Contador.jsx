@@ -19,7 +19,7 @@ const Contador = () => {
 
   return (
     <div>
-      <h2>Contador Mejorado Reducer</h2>
+      <h2>Contador Reducer</h2>
     <nav>
       <button onClick={sumar5}>+5</button>
       <button onClick={sumar}>+</button>
